@@ -37,7 +37,35 @@ body{
     padding-left: 70px;
     margin: 0;
 }
-
+.paddingg{
+    padding-bottom: 40px;
+}
+.padinggbotom{
+    padding-bottom:35px;
+}
+.N{
+    margin-bottom: 47px;
+    font-size: 32px;
+}
+.padinggleftp{
+    padding-left: 130px;
+}
+.padinggleftp2{
+    padding-left: 150px;
+}
+.padinggrightp{
+    padding-right: 145px;
+}
+.padinggtighttp2{
+    padding-right: 180px;
+}
+.paddingsgh{
+    padding-top: 65px;
+    padding-bottom: 10px;
+}
+.paddingsgp{
+    padding-bottom: 36px;
+}
 /*COLORS*/
 .ctekstmain{
     color:#909090;/*tekstkleur*/
@@ -54,15 +82,8 @@ body{
 .footericon{
     color: #fff;
 }
-/* FONTS */
-@font-face {
-    font-family:;
-    src: url('../webfonts/MYRIADPRO-REGULAR.woff');
-}
-@font-face {
-    font-family:;
-    src: url('../webfonts/SegoeWPN.woff');
-}
+
+
 /* POSITIONING CSS*/
 /* Display Flex */
 .d-flex {
@@ -198,6 +219,9 @@ body{
 .align-self-stretch {
     align-self: stretch;
 }
+.align-text{
+    text-align: right;
+}
 
 /* Order */
 .order-first {
@@ -287,6 +311,7 @@ nav{
 }
 nav p{
     color: #fff;
+    font-size: 14px;
 }
 nav ul{
 }
@@ -309,8 +334,11 @@ nav ul li:hover .submenu{
     padding-top: 20px;
 }
 #titel1{
-    padding-left: 220px;
-    padding-right: 220px;
+    padding-left: 320px;
+    padding-right: 320px;
+}
+#titel1 h1{
+    font-size: 36px;
 }
 #hm1{
     padding-top: 70px;
@@ -344,7 +372,7 @@ h1 span{
     cursor:pointer;
     padding:12px 16px;
     margin-left: 10px;
-    width: 153px;
+    width: 170px;
     height: 53px;
 }
 #btn1{
@@ -357,7 +385,7 @@ h1 span{
     cursor:pointer;
     padding:12px 16px;
     margin-right: 10px;
-    width: 153px;
+    width: 170px;
     height: 53px;
 }
 /*SECTION Buildt with bootstrap*/
@@ -372,15 +400,22 @@ h1 span{
 }
 #latestnews h2{
     padding-top: 100px;
+    font-size: 32px;
+}
+#latestnews p{
+    font-size: 16px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 #T{
-    padding-left: 420px;
-    padding-right: 420px;
+    padding-left: 400px;
+    padding-right: 400px;
     padding-bottom: 70px;
+    font-size: 16px;
+    color: black;
 }
 h2{
     font-size:42.35px;
-    font-family:;
     padding-top: 0px;
 }
 #R{
@@ -392,7 +427,7 @@ h3{
     margin-bottom: 0px;
 }
 .latestnewsp{
-    width:248px;
+    width:250px;
 }
 .latestnewsmargin{
     margin:30px 0px;
@@ -420,8 +455,19 @@ h3{
     padding-bottom: 70px;
     padding-top: 70px;
 }
+#section2 h2{
+    font-size: 32px;
+}
 #section2 p{
-    padding-right: 315px;
+    padding-right: 250px;
+    font-size: 16px;
+}
+#section2text{
+    font-size: 16px;
+    padding-right: 50px;
+}
+#section2text2{
+    padding-right: 50px;
 }
 
 /* App Features Section (Reversed Section) */
@@ -433,14 +479,27 @@ h3{
     width: 32px;
     height: 32px;
 }
+#T2{
+margin-left: 130px;
+}
+#imggg{
 
+}
 .features-text {
 }
-#T2 p{
-    padding-right: 250px;
+#T2 h2{
+    font-size: 32px;
 }
-#app-features p{
-padding-right: 325px;
+#T2 p{
+    padding-right: 200px;
+    font-size: 16px;
+}
+#appft1 h3, #appft2 h3, #appft1 p, #appft1 p{
+    font-size: 16px;
+}
+
+#ft1 p{
+    padding-right: 300px;
 }
 .features-list .feature-item {
     display: flex;
@@ -454,6 +513,173 @@ padding-right: 325px;
 }
 #iconsection3, #icon2section3{
 }
+
+/*section Awesome features*/
+#linkerkant{
+    padding-right: 60px;
+    padding-top: 20px;
+}
+#rechterkant{
+    padding-left: 60px;
+    padding-top: 20px;
+}
+#aswftr p, #aswftr2 h3, #aswftr2 p{
+    font-size: 16px;
+}
+#aswftr p{
+    padding-left: 440px;
+    padding-right: 440px;
+}
+
+/*Screenshot Gallery*/
+#imagess{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+#newsletter {
+    color: #fff;
+    background: #1e9ac9;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#glt h2{
+    font-size: 32px;
+}
+#glt p{
+    font-size: 16px;
+    padding-right: 430px;
+    padding-left: 430px;
+}
+
+/*Formulier*/
+/* Stijl voor het formulier en de invoervelden */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Formulier rand en padding */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #ccc; /* Rand rondom het formulier */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    background-color: #f9f9f9; /* Lichte achtergrond voor het formulier */
+}
+#formm{
+    padding-bottom: 100px;
+}
+#formm h2{
+    font-size:42.35px;
+    font-family:;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* Ruimte tussen naam en achternaam velden */
+}
+
+/* Stijl voor de tekstvelden */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.form-row .form-group {
+    flex: 1; /* Zorg ervoor dat de velden gelijke ruimte nemen */
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+/* Stijl voor de submitknop */
+.form-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745; /* Groene knop */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hover-effect voor de knop */
+.form-group button:hover {
+    background-color: #218838;
+}
+
+
+/*Newsletter*/
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 350px;
+    outline: none;
+}
+
+.newsletter input[type="email"]::placeholder {
+    color: #999;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #a7cb00;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    width: 110px;
+}
+#newsletter h2{
+    font-size: 32px;
+}
+#newsletterp{
+    padding-left: 430px;
+    padding-right: 430px;
+    font-size: 16px;
+}
+
+.newsletter button:hover {
+    background-color: #218838;
+}
+
 
 /* ABSOLUTE */
 /*#absolute{*/
@@ -473,18 +699,20 @@ padding-right: 325px;
 /*}*/
 /* FOOTER */
 footer{
-    border-top:1px solid #fff;
     background-color: #1f9bc9;
+    margin-top: 0px;
 }
 footer p{
     padding:35px 0px;
     margin:0px;
     color: white;
+    font-size: 16px;
 }
 #ficont{
     padding-top: 52px;
     padding-bottom: 62px;
     font-size: 30px;
+    border-top:1px solid #fff;
 }
 
 /*.masked-video {*/
@@ -507,3 +735,67 @@ footer p{
 /*    -webkit-mask-position: center center;*/
 /*    -webkit-mask-repeat: no-repeat;*/
 /*}*/
+
+@font-face {
+    font-family: karlabold;
+    src: url('../fonts/Karla-Bold.ttf');
+}
+@font-face{
+    font-family: worksansbold;
+    src:url('../fonts/WorkSans-Bold.ttf');
+}
+@font-face{
+    font-family: worksanslight;
+    src:url('../fonts/WorkSans-Light.ttf');
+}
+@font-face{
+    font-family: karlaregular;
+    src:url('../fonts/Karla-Regular.ttf');
+}
+@font-face {
+    font-family: LANENAR;
+    src:url("../fonts/LANENAR_.ttf");
+}
+@font-face {
+    font-family: LANEPOSH;
+    src: url("../fonts/LANEPOSH.ttf");
+}
+@font-face {
+    font-family: LANEUP;
+    src: url("../fonts/LANEUP__.ttf");
+}
+@font-face {
+    font-family: SOURCESANSR;
+    src: url("../fonts/SourceSans3-Regular.ttf");
+}
+@font-face {
+    font-family: SOURCESANSSB;
+    src: url("../fonts/SourceSans3-SemiBold.ttf");
+}
+.sourcesans3semi{
+    font-family: SOURCESANSSB;
+}
+.sourcesans3{
+    font-family:SOURCESANSR;
+}
+.karlabold{
+    font-family:karlabold;
+}
+.worksansbold{
+    font-family:worksansbold;
+}
+.worksanslight{
+    font-family:worksanslight;
+}
+.karlaregular{
+    font-family:karlaregular;
+}
+.LANENAR{
+    font-family: LANENAR;
+}
+.LANEPOSH{
+    font-family: LANEPOSH;
+}
+.LANEUP{
+    font-family: LANEUP;
+}
