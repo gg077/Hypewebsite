@@ -7,7 +7,6 @@ html {
 }
 body{
     font-size:14.35px;
-    font-family:;
     margin:0 auto;
 }
 .wrapper{
@@ -345,11 +344,6 @@ nav ul li:hover .submenu{
 }
 
 /* SECTION HERO*/
-#hero {
-    background: url('../img/background_slider.png') no-repeat;
-    padding-top: 165px;
-    padding-bottom: 218px;
-}
 #hero div{
     width:475px;
     padding-right:15px;
@@ -357,43 +351,62 @@ nav ul li:hover .submenu{
 h1{
     font-size:42.35px;
     color:#fff;
-    font-family:;
 }
 h1 span{
     font-size:26px;
 }
-#btn{
-    background:#a7cb00;
-    color:#fff;
-    border:2px solid transparent;
-    border-radius:10px;
-    font-weight:300;
-    font-size:17px;
-    cursor:pointer;
-    padding:12px 16px;
+#btn {
+    background: #a7cb00;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 12px 16px;
     margin-left: 10px;
     width: 170px;
     height: 53px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-#btn1{
-    background:#1b8ab4;
-    color:#fff;
-    border:2px solid transparent;
-    border-radius:10px;
-    font-weight:300;
-    font-size:17px;
-    cursor:pointer;
-    padding:12px 16px;
+
+#btn:hover {
+    background-color: #8fb200; /* A slightly darker shade of the original color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn1 {
+    background: #1b8ab4;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 12px 16px;
     margin-right: 10px;
     width: 170px;
     height: 53px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Soepele overgang */
 }
+
+#btn1:hover {
+    background-color: #167a9b; /* Donkerdere tint bij hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw bij hover */
+}
+
 /*SECTION Buildt with bootstrap*/
-#icon1, #icon2, #icon3{
+#icon1, #icon2, #icon3 {
     width: 70px;
     height: 70px;
     color: #d0cfcf;
+    transition: transform 0.3s ease; /* Soepele overgang */
 }
+
+#icon1:hover, #icon2:hover, #icon3:hover {
+    transform: scale(1.1); /* Iets groter bij hover */
+}
+
 #latestnews h3{
     color: #c4dc55;
     font-size: 24px;
@@ -435,17 +448,37 @@ h3{
 #pencil,#basket,#pc{
     border-radius:50%;
 }
-
 #basket{
     background:#ebbb11;
 }
 #pc{
     background:#d94748;
 }
-/*detailed documentation*/
-#img2{
-
+/*ANIMATION*/
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    -webkit-animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+/*detailed documentation*/
 #section2icon, #section2icon2{
     margin-right: 38px;
     width: 32px;
@@ -480,12 +513,7 @@ h3{
     height: 32px;
 }
 #T2{
-margin-left: 130px;
-}
-#imggg{
-
-}
-.features-text {
+    margin-left: 130px;
 }
 #T2 h2{
     font-size: 32px;
@@ -497,9 +525,8 @@ margin-left: 130px;
 #appft1 h3, #appft2 h3, #appft1 p, #appft1 p{
     font-size: 16px;
 }
-
 #ft1 p{
-    padding-right: 300px;
+    padding-right: 240px;
 }
 .features-list .feature-item {
     display: flex;
@@ -553,6 +580,31 @@ margin-left: 130px;
     padding-right: 430px;
     padding-left: 430px;
 }
+/*ANIMATION*/
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.scale-up-center {
+    -webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
 
 /*Formulier*/
 /* Stijl voor het formulier en de invoervelden */
@@ -563,11 +615,20 @@ margin-left: 130px;
     align-items: center;
     margin-top: 50px;
 }
-
 .contact-form h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
+}
+
+/*video*/
+#video h1{
+    color: black;
+    font-size: 32px;
+}
+#videoo{
+    width: 750px;
+    height: 375px;
 }
 
 /* Formulier rand en padding */
@@ -580,21 +641,19 @@ form {
     border-radius: 10px;
     max-width: 600px;
     width: 100%;
-    background-color: #f9f9f9; /* Lichte achtergrond voor het formulier */
+    background-color: #f9f9f9;
 }
 #formm{
     padding-bottom: 100px;
 }
 #formm h2{
     font-size:42.35px;
-    font-family:;
     padding-top: 0px;
     margin-top: 0px;
 }
-
 .form-row {
     display: flex;
-    gap: 20px; /* Ruimte tussen naam en achternaam velden */
+    gap: 20px;
 }
 
 /* Stijl voor de tekstvelden */
@@ -608,11 +667,9 @@ form {
     width: 100%;
     outline: none;
 }
-
 .form-row .form-group {
-    flex: 1; /* Zorg ervoor dat de velden gelijke ruimte nemen */
+    flex: 1;
 }
-
 .form-group input[type="text"]::placeholder,
 .form-group input[type="email"]::placeholder,
 .form-group textarea::placeholder {
@@ -624,7 +681,7 @@ form {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color: #28a745; /* Groene knop */
+    background-color: #28a745;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -635,7 +692,6 @@ form {
     background-color: #218838;
 }
 
-
 /*Newsletter*/
 .newsletter {
     display: flex;
@@ -643,7 +699,6 @@ form {
     align-items: center;
     margin-top: 50px;
 }
-
 .newsletter input[type="email"] {
     padding: 10px;
     font-size: 16px;
@@ -652,11 +707,9 @@ form {
     width: 350px;
     outline: none;
 }
-
 .newsletter input[type="email"]::placeholder {
     color: #999;
 }
-
 .newsletter button {
     padding: 10px 20px;
     font-size: 16px;
@@ -675,28 +728,10 @@ form {
     padding-right: 430px;
     font-size: 16px;
 }
-
 .newsletter button:hover {
     background-color: #218838;
 }
 
-
-/* ABSOLUTE */
-/*#absolute{*/
-/*    position:relative;*/
-/*}*/
-/*#absolute img{*/
-/*    position:relative;*/
-/*    z-index:1;*/
-/*}*/
-/*#absolute p{*/
-/*    position:absolute;*/
-/*    top:10px;*/
-/*    left:50px;*/
-/*    color:#fff;*/
-/*    z-index:5;*/
-/*    font-size:50px;*/
-/*}*/
 /* FOOTER */
 footer{
     background-color: #1f9bc9;
@@ -714,28 +749,16 @@ footer p{
     font-size: 30px;
     border-top:1px solid #fff;
 }
+#ic1, #ic2, #ic3, #ic4 {
+    transition: transform 0.3s ease;
+}
 
-/*.masked-video {*/
-/*    -webkit-mask-image: url('../img/maskvid2.png'); !* Hier 'mask.png' vervangen door het pad naar je eigen maskerbeeld. *!*/
-/*    !*mask: url('mask.svg#mask'); !* Voor niet-WebKit browsers. *!*/
-/*    width: 100%;*/
-/*    max-width: 800px;*/
-/*    height: auto;*/
-/*    -webkit-mask-size: 70%;*/
-/*    -webkit-mask-position: center center;*/
-/*    -webkit-mask-repeat: no-repeat;*/
+#ic1:hover, #ic2:hover, #ic3:hover, #ic4:hover {
+    transform: scale(1.1);
+}
 
-/*}*/
-/*.masked-image {*/
-/*    -webkit-mask-image: url('../img/maskvid.png'); !* Path to your mask image *!*/
-/*    width: 100%;*/
-/*    max-width: 800px;*/
-/*    height: auto;*/
-/*    -webkit-mask-size: 70%;*/
-/*    -webkit-mask-position: center center;*/
-/*    -webkit-mask-repeat: no-repeat;*/
-/*}*/
 
+/*FONTS*/
 @font-face {
     font-family: karlabold;
     src: url('../fonts/Karla-Bold.ttf');
